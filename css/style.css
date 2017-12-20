@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/fond.png");
+}
+
+header, button {
+  background-color: #B8CB21;
+}
+
+main {
+  background-color: #fff;
+}
+
+h2, h4 {
+  color: #B8CB21;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.content {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.menu {
+  list-style: none;
+  display: inline;
+  text-transform: uppercase;
+}
+
+/* float dar neaisku kaip veikia
+.left {
+  float: left;
+  max-width: 50%;
+}
+
+.right {
+  float: right;
+  max-width: 50%;
+}
+
+.left::after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+footer {
+  text-align: center;
+}
