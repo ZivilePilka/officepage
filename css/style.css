@@ -1,41 +1,50 @@
+@import url("normalize.css");
+
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
 * {
   box-sizing: border-box;
 }
 
 body {
   background-image: url("../img/fond.png");
+  font-family: "Oswald", sans-serif;
 }
 
-header, button {
+header {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 16px;
   background-color: #B8CB21;
 }
 
-main {
-  background-color: #fff;
+.logo {
+  margin-left: 40px;
 }
 
-h2, h4 {
-  color: #B8CB21;
+nav {
+  line-height: 123px;
+  margin-right: 40px;
 }
 
-h2 {
+ul {
+  margin: 0;
+}
+
+.menu li {
+  list-style: none;
+  display: inline;
   text-transform: uppercase;
-  font-size: 24px;
+  padding: 0 20px;
 }
 
 .content {
   max-width: 750px;
   margin: 0 auto;
   font-size: 16px;
+  background-color: #fff;
 }
 
-.menu {
-  list-style: none;
-  display: inline;
-  text-transform: uppercase;
-}
-
-/* float dar neaisku kaip veikia
 .left {
   float: left;
   max-width: 50%;
@@ -46,12 +55,80 @@ h2 {
   max-width: 50%;
 }
 
-.left::after {
+header::after {
   content: "";
   display: table;
   clear: both;
-} */
+}
+
+button {
+  background-color: #B8CB21;
+  color: #fff;
+}
+
+h2, h4 {
+  color: #B8CB21;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin: 0;
+}
+
+h2::before {
+  content: "\2618";
+}
+
+li.list, p {
+  font-size: 0.7em;
+  font-weight: lighter;
+}
+
+main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.who, .info {
+  max-width: 40%;
+  padding: 20px;
+}
+
+.what, .map {
+  max-width: 60%;
+  padding: 20px;
+}
+
+article.who {
+  border-right: 1px solid grey;
+}
+
+article {
+  margin: 30px 0;
+}
+
+#team {
+  max-width: 100%;
+}
+
+#icons {
+  max-width: 50%;
+  float: left;
+  padding-right: 10px;
+}
 
 footer {
   text-align: center;
+}
+
+li.contacts {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
 }
